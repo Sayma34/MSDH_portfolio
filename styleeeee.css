@@ -1,0 +1,360 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    border-bottom: 2px solid teal;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: teal;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: teal;
+    border-bottom: 2px solid teal;
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2.5rem;
+    color: teal;/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #ffffff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Sparkling background using animation */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle, rgba(0,255,255,0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: -1;
+    animation: sparkle 5s linear infinite;
+}
+
+@keyframes sparkle {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+/* Header/Nav */
+header {
+    width: 100%;
+    padding: 20px 50px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid teal;
+}
+
+.logo {
+    color: teal;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: teal;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.home-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid teal;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.home-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.home-content h1 span {
+    color: teal;
+}
+
+.typing-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+.home-content p {
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: teal;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.btn, #random-nav {
+    background-color: teal;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover, #random-nav:hover {
+    background-color: #00d4d4;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 30px;
+    text-align: center;
+    color: teal;
+    margin: 30px 0;
+}
+
+/* Content Boxes (like Education, Services, etc.) */
+.education-container,
+.services-container,
+.skills-container,
+.research-container,
+.achievement-container,
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.education-box,
+.service-box,
+.skill-box,
+.research-box,
+.achievement-box,
+.contact-box {
+    background-color: #111;
+    border-left: 4px solid teal;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,255,255,0.1);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .home {
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        text-align: left;
+    }
+
+    .home-content {
+        max-width: 600px;
+    }
+}
+
+}
+
+/* Section styles */
+section {
+    padding: 50px 20px;
+}
+
+.skills-container, .education-container, .research-container, .achievement-container, .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-box, .education-box, .research-box, .achievement-box {
+    background-color: #222;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: 2px solid teal;
+}
+
+.skill-box:hover, .education-box:hover, .research-box:hover, .achievement-box:hover {
+    background-color: teal;
+    color: black;
+    transform: translateY(-10px);
+}
+
+.skill-box h2, .education-box h2, .research-box h2, .achievement-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: teal;
+}
+
+.skill-box p, .education-box p, .research-box p, .achievement-box p {
+    color: #ddd;
+}
+
+/* Contact form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.2rem;
+    color: teal;
+}
+
+form input, form textarea {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid teal;
+    border-radius: 5px;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #00ffaa;
+}
+
+form button {
+    padding: 12px;
+    background-color: teal;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #00ffaa;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .skills-container, .education-container, .research-container, .achievement-container {
+        flex-direction: column;
+    }
+
+    .skill-box, .education-box, .research-box, .achievement-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 0.9rem;
+    }
+
+    .social-icons {
+        gap: 5px;
+    }
+}
